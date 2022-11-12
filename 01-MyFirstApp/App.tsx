@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native';
-import HolaMundoScreen from './src/components/screens/HolaMundoScreen';
-import ContadorScreen from './src/components/screens/ContadorScreen';
+import HolaMundoScreen from './src/screens/HolaMundoScreen';
+import ContadorScreen from './src/screens/ContadorScreen';
 const App = () => {
   return (
     // <HolaMundoScreen />
