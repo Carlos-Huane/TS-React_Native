@@ -8,5 +8,14 @@ export const styles = StyleSheet.create({
         fontSize: 30,
         textAlign: 'center',
         marginBottom: 10,
+    },
+    botonGrande: {
+        width: 200,
+        height: 60,
+        backgroundColor: 'red',
+        borderRadius: 20,
+        alignItems: 'center',
+        marginTop: 20,
+        justifyContent: 'center'
     }
 })

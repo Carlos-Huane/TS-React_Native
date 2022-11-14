@@ -2,7 +2,9 @@ import React, {useEffect} from 'react'
 import { View, Text, Button } from 'react-native';
 import { StackScreenProps } from '@react-navigation/stack';
 import { styles } from '../theme/appTheme';
-interface Props extends StackScreenProps<any, any>{};
+import { RookStackParams } from '../navigator/StackNavigator';
+
+interface Props extends StackScreenProps<RookStackParams, 'PersonaScreen'>{};
 
 function PersonaScreen({route, navigation}: Props) {
     // console.log(JSON.stringify(props, null, 3))

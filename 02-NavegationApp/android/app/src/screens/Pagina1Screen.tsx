@@ -15,11 +15,11 @@ const  Pagina1Screen = ({navigation}: Props) => {
           title='Ir a página 2'
           onPress={( ) => navigation.navigate("Pagina2Screen")}
         />
-        <TouchableOpacity onPress={( ) => navigation.navigate("PersonaScreen", {
+        <TouchableOpacity style={styles.botonGrande} onPress={( ) => navigation.navigate("PersonaScreen", {
           id:1, 
           name: "Carlos",
         })}>
-          <Text>Mandar props name: "carlos", id:1</Text>
+          <Text style={{color: 'white', fontSize: 20}}>Mandar props name: "carlos", id:1</Text>
         </TouchableOpacity>
     </View>
   )
