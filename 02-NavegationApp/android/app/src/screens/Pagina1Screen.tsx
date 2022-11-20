@@ -1,13 +1,30 @@
-import { StackScreenProps } from '@react-navigation/stack';
-import React from 'react'
+import React, {useEffect} from 'react'
 import { View, Text, Button} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { styles } from '../theme/appTheme';
 import { useNavigation } from '@react-navigation/core';
+import { styles } from '../theme/appTheme';
+
+// import { StackScreenProps } from '@react-navigation/stack';
+import { DrawerScreenProps } from '@react-navigation/drawer';
+
 //EN ESTA PARTE NO UTILIZO NINGUN HOOK DE REACT NAVIGATION
-interface Props extends StackScreenProps<any, any>{}
+// interface Props extends StackScreenProps<any, any>{}
+interface Props extends DrawerScreenProps<any, any>{}
 
 const  Pagina1Screen = ({navigation}: Props) => {  
+
+  useEffect(() => {
+    navigation.setOptions({
+      headerLeft: () => (
+        <Button 
+          title='Menú'
+          onPress={() => {navigation.toggleDrawer()}}
+        />
+      )
+    })
+  }, [])
+
+
   return (
     <View style={styles.globalMargin}>
         <Text style={styles.title}>Pagina1Screen</Text>
