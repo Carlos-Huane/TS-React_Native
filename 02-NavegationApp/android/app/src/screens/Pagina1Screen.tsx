@@ -20,7 +20,8 @@ const  Pagina1Screen = ({navigation}: Props) => {
           title='Menú'
           onPress={() => {navigation.toggleDrawer()}}
         />
-      )
+      ),
+      
     })
   }, [])
 
